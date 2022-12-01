@@ -166,4 +166,5 @@ class Config(object):
     @property
     def logout_uri(self):
         return (f"{self.domain}/logout?response_type=code"
-                f"&client_id={self.client_id}&logout_uri={self.signout_uri}")
+                f"&client_id={self.client_id}&logout_uri={self.signout_uri}"
+                f"&redirect_uri={self.signout_uri}")
